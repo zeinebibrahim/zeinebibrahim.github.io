@@ -50,6 +50,13 @@ li a:hover:not(.active){
     /*-webkit-filter: blur(5px);
     filter: blur(5px);*/   
 }
+@media screen and (max-width: 600px) {
+  .background {
+    background-image: url("../img/myPicture.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
 h1{
     color: rgb(161, 0, 113);
     text-shadow: 2px 2px 5px rgb(254, 255, 255);
