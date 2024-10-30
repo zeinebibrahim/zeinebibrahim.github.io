@@ -1,54 +1,57 @@
-body, html{
-    background-color: rgb(69, 184, 255);
-    padding: 0;
-    margin: 0;
-    height: 100%;
+body,
+html {
+  background-color: rgb(69, 184, 255);
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
-ul{
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: darkblue;
-    position: fixed;
-    top: 0;
-    width: 100%;
+
+ul {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkblue;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-  
-li{
-    float: left;
+
+li {
+  float: left;
 }
-  
-li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-  
-li a:hover:not(.active){
-    background-color: rgb(0, 0, 114);
+
+li a:hover:not(.active) {
+  background-color: rgb(0, 0, 114);
 }
-  
+
 .active {
-    background-color: #04AA6D;
+  background-color: #04AA6D;
 }
-.background{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-image: url("../img/game.png");
-    background-size: cover;
-    background-position: center;
-    height: 90%;
-    background-position: right;
-    background-repeat: repeat;
-    background-size: cover;
-    margin-top: 35px; 
+
+.background {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../img/game.png");
+  background-size: cover;
+  background-position: center;
+  height: 90%;
+  background-position: right;
+  background-repeat: repeat;
+  background-size: cover;
+  margin-top: 35px;
 }
 
 @media screen and (max-width: 600px) {
@@ -58,75 +61,83 @@ li a:hover:not(.active){
     background-position: center;
   }
 }
-h1{
-    color: darkblue;
+
+h1 {
+  color: darkblue;
 }
 
-.cards{
-    margin-top: 80px;
-    margin-bottom: 80px;
+.cards {
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 * {
-    box-sizing: border-box;
-  }
-  
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-  }
-  
-  .card {
-    transition: 0.3s;
-    box-shadow: 0 0 10px 0 white;
-    padding: 30px;
-    text-align: center;
-    background-color: rgb(2, 127, 169);
-    border-radius: 25px;
-    color: darkblue;
-  }
-
-  .cards .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+  box-sizing: border-box;
 }
 
-body:has(.card:hover) .card a{
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.card {
+  transition: 0.3s;
+  box-shadow: 0 0 10px 0 white;
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(2, 127, 169);
+  border-radius: 25px;
+  color: darkblue;
+}
+
+.cards .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+body:has(.card:hover) .card a {
   transition: 0.3s;
   color: white;
 }
-  .card:hover{
-    transition: 0.3s;
-    background-color: rgb(0, 59, 78);
-    color: white;
-  }
 
-  .cardLink{
-    transition: 0.3s;
-    color: white;
-  }
-
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-
-footer{
-    position: sticky;
-    bottom: 0%;
-    width: 100%; 
-    background-color: darkblue;
-    text-align: center;
-    color: white;
+.card:hover {
+  transition: 0.3s;
+  background-color: rgb(0, 59, 78);
+  color: white;
 }
 
-.btn{
+.cardLink {
+  transition: 0.3s;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  position: sticky;
+  bottom: 0%;
+  width: 100%;
   background-color: darkblue;
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  background-color: darkblue;
+  color: white;
+}
+
+.btn:hover{
+  transition: 0.3s;
+  background-color: rgb(0, 0, 75);
   color: white;
 }
