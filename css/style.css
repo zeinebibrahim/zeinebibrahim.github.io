@@ -1,48 +1,36 @@
-body, html{
-    background-color: rgb(0, 0, 48);
-    padding: 0;
-    margin: 0;
-    height: 100%;
-}
-ul{
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(0, 0, 48);
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-  
-li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-li a:hover:not(.active){
-    background-color: #000000;
+body,
+html {
+  background-color: rgb(0, 0, 48);
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
-.background{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-image: url("../img/myPicture.png");
-    height: 90%;
-    background-position: right;
-    background-repeat: repeat;
-    background-size: cover;
-    margin-top: 45px;
-    /*-webkit-filter: blur(5px);
-    filter: blur(5px);*/   
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+
+li a:hover:not(.active) {
+  background-color: #000000;
+}
+
+.background {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../img/myPicture.png");
+  height: 75%;
+  background-position: right;
+  background-repeat: repeat;
+  background-size: cover;
+  /*-webkit-filter: blur(5px);
+    filter: blur(5px);*/
+}
+
 @media screen and (max-width: 900px) {
   .background {
     margin-top: 0px;
@@ -51,143 +39,159 @@ li a:hover:not(.active){
     background-position: center;
   }
 }
-h1{
-    color: rgb(0, 0, 78);
-    text-shadow: 2px 2px 4px rgb(133, 0, 93);
-}
 
-h2{
+h1 {
   color: rgb(0, 0, 78);
   text-shadow: 2px 2px 4px rgb(133, 0, 93);
 }
 
-.offcanvas{
+h2 {
+  color: rgb(0, 0, 78);
+  text-shadow: 2px 2px 4px rgb(133, 0, 93);
+}
+
+.offcanvas {
   background-color: rgb(0, 0, 48);
   color: white;
 }
 
-.btn-close{
+.btn-close {
   background-color: white;
 }
 
-.mb-3{
+.mb-3 {
   width: 80%;
   display: flex;
   flex-direction: column;
-
 }
 
 .mb-3 {
-  margin-left: 9% ;
+  margin-left: 9%;
 }
 
-.mb-3 label{
+.mb-3 label {
   display: flex;
   justify-content: center;
 }
-.cards{
-    margin-top: 80px;
-    margin-bottom: 80px;
+
+.cards {
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 * {
-    box-sizing: border-box;
-  }
-  
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-  }
-  
-  .row {margin: 0 -5px;}
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .card {
-    transition: 0.3s;
-    box-shadow: 0 0 10px 0 rgb(254, 255, 255);
-    padding: 30px;
-    text-align: center;
-    background-color: rgb(0, 0, 48);
-    border-radius: 25px;
-    color: white;
-  }
+  box-sizing: border-box;
+}
 
-body:has(.card:hover) .card a{
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  transition: 0.3s;
+  box-shadow: 0 0 10px 0 rgb(254, 255, 255);
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(0, 0, 48);
+  border-radius: 25px;
+  color: white;
+}
+
+body:has(.card:hover) .card a {
   transition: 0.3s;
   color: rgb(0, 0, 48);
 }
 
-  .card:hover{
-    transition: 0.3s;
-    background-color: white;
-    color: rgb(0, 0, 48);
-  }
-
-  .cardLink{
-    transition: 0.3s;
-    color: white;
-  }
-
-  @media screen and (max-width: 1000px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  .progress {
-    width: 20%;
-    box-shadow: 0 0 10px 0 rgb(254, 255, 255);
-    margin-bottom: 180px;
-  }
-  .progress-bar{
-    background-color: rgb(0, 0, 48);
-  }
-  .progressbaranimation{
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  @media screen and (max-width: 1000px) {
-    .progressbaranimation{
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  @media screen and (max-width: 1000px) {
-    .progress {
-      width: 100%;
-      box-shadow: 0 0 10px 0 rgb(254, 255, 255);
-      margin-bottom: 70px;
-    }
-  }
-
-  .dontShow{
-    display: block;
-  }
-.show{
-  display: none;
-}  
-
-@media (max-width: 900px) {
-    .show {
-        display: block;
-      }
-      .dontShow {
-        display: none;
-    }
+.card:hover {
+  transition: 0.3s;
+  background-color: white;
+  color: rgb(0, 0, 48);
 }
 
-footer{
+.cardLink {
+  transition: 0.3s;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.progress {
+  width: 20%;
+  box-shadow: 0 0 10px 0 rgb(254, 255, 255);
+  margin-bottom: 180px;
+}
+
+.progress-bar {
+  background-color: rgb(0, 0, 48);
+}
+
+.progressbaranimation {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1000px) {
+  .progressbaranimation {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .progress {
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgb(254, 255, 255);
+    margin-bottom: 70px;
+  }
+}
+
+.dontShow {
+  display: block;
+}
+
+.show {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .show {
+    display: block;
+  }
+
+  .dontShow {
+    display: none;
+  }
+}
+
+.custom-navbar {
+  margin-top: -10px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+footer {
   position: sticky;
   bottom: 0%;
-  width: 100%; 
+  width: 100%;
   background-color: rgb(133, 0, 93);
   text-align: center;
   color: white;
