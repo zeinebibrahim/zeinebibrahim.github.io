@@ -41,12 +41,12 @@ li a:hover:not(.active) {
 }
 
 h1 {
-  color: rgb(0, 0, 78);
+  color: white;
   text-shadow: 2px 2px 4px rgb(133, 0, 93);
 }
 
 h2 {
-  color: rgb(0, 0, 78);
+  color: white;
   text-shadow: 2px 2px 4px rgb(133, 0, 93);
 }
 
@@ -200,6 +200,31 @@ h2 {
   display: flex;
   align-items: center;
 }
+
+.contacten{
+  display: flex;
+  color: white;
+  flex-direction: column;
+  margin-bottom: 10px;
+  background-color: rgb(133, 0, 93);
+  width: 30%;
+  border-radius: 25px;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+@media (max-width: 1000px) {
+  .contacten{
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+
+.contacten h1{
+  margin-bottom: 20px;
+}
+
+
 
 footer {
   position: sticky;
