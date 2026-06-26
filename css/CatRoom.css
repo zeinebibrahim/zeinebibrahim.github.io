@@ -92,6 +92,13 @@ h1 {
   color: black;
 }
 
+.card {
+  outline: none;
+  border: none;
+  background-clip: padding-box;
+}
+
+
 .cards .container {
   display: flex;
   flex-wrap: wrap;
